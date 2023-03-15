@@ -2,12 +2,13 @@ package org.example;
 
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
-import org.example.models.AuthorizationResponse;
-import org.example.models.ErrorResponse;
+import org.example.domain.AuthorizationResponse;
+import org.example.domain.ErrorResponse;
 import org.example.models.User;
-import org.example.models.UserResponse;
+import org.example.domain.UserResponse;
 import org.example.steps.UserSteps;
 import org.example.utils.CheckUtils;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +17,7 @@ import org.junit.runners.Parameterized;
 import static io.qameta.allure.Allure.step;
 
 @RunWith(Parameterized.class)
-public class UpdateUserParameterizedTest extends BaseTest {
+public class UpdateUserParameterizedTest extends BaseUserTest {
     User userToCreate;
     User userToUpdate;
     User expectedUser;
@@ -79,6 +80,10 @@ public class UpdateUserParameterizedTest extends BaseTest {
     public void setUp() {
         init();
         userSteps = new UserSteps();
+    }
+    @After
+    public void tearDown() {
+        clearUsers();
     }
 
     @Test

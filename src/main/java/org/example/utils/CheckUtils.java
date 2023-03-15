@@ -3,8 +3,7 @@ package org.example.utils;
 import io.qameta.allure.Step;
 import org.apache.commons.lang3.StringUtils;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class CheckUtils {
     @Step("Check status code")
@@ -32,4 +31,21 @@ public class CheckUtils {
                 StringUtils.isNotBlank(actual)
         );
     }
+
+    @Step("Check field \"{0}\" is not null")
+    public static <T> void checkFieldIsNotNull(String fieldName, T actual) {
+        assertNotNull(
+                String.format("Field \"%s\" is null", fieldName),
+                actual
+        );
+    }
+
+    @Step("Check value \"{0}\" is more than {1}")
+    public static void checkValueIsMoreThan(String fieldName, int lowerLimit, int actual) {
+        assertTrue(
+                String.format("Field \"%s\" is not more than %d", fieldName, lowerLimit),
+                actual > lowerLimit
+        );
+    }
+
 }

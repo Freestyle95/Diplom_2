@@ -5,7 +5,7 @@ import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
 import org.example.ApiConfig;
-import org.example.models.AuthorizationResponse;
+import org.example.domain.AuthorizationResponse;
 import org.example.models.User;
 
 import java.util.List;

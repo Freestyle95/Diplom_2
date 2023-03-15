@@ -3,21 +3,22 @@ package org.example;
 import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
-import org.example.models.ErrorResponse;
+import org.example.domain.ErrorResponse;
 import org.example.models.User;
 import org.example.steps.UserSteps;
 import org.example.utils.CheckUtils;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
-public class CreateNotFullDataUserTest extends BaseTest {
+public class CreateInvalidUserParameterizedTest extends BaseUserTest {
     User user;
     UserSteps userSteps;
 
-    public CreateNotFullDataUserTest(String name, User user) {
+    public CreateInvalidUserParameterizedTest(String name, User user) {
         this.user = user;
     }
 
@@ -52,6 +53,10 @@ public class CreateNotFullDataUserTest extends BaseTest {
     public void setUp() {
         init();
         userSteps = new UserSteps();
+    }
+    @After
+    public void tearDown() {
+        clearUsers();
     }
 
     @Test
