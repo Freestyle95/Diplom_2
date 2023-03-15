@@ -1,11 +1,12 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.example.domain.AuthorizationResponse;
 import org.example.domain.ErrorResponse;
-import org.example.models.User;
 import org.example.domain.UserResponse;
+import org.example.models.User;
 import org.example.steps.UserSteps;
 import org.example.utils.CheckUtils;
 import org.junit.After;
@@ -81,12 +82,14 @@ public class UpdateUserParameterizedTest extends BaseUserTest {
         init();
         userSteps = new UserSteps();
     }
+
     @After
     public void tearDown() {
         clearUsers();
     }
 
     @Test
+    @DisplayName("Update user with authorization")
     public void updateUserWithAuthorization() {
         createdUsers.add(userToCreate);
         createdUsers.add(expectedUser);
@@ -111,6 +114,7 @@ public class UpdateUserParameterizedTest extends BaseUserTest {
     }
 
     @Test
+    @DisplayName("Update user without authorization")
     public void updateUserWithoutAuthorization() {
         createdUsers.add(userToCreate);
         createdUsers.add(expectedUser);

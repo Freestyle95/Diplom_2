@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.example.domain.BaseResponse;
@@ -24,6 +25,7 @@ public class GetOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Get order with authorization")
     public void getOrderWithAuthorization() {
         Order orderToCreate = orderSteps.generateRandomOrderWithIngredients(accessToken);
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithAuthorization(orderToCreate, accessToken);
@@ -37,6 +39,7 @@ public class GetOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Get order without authorization")
     public void getOrderWithoutAuthorization() {
         Order orderToCreate = orderSteps.generateRandomOrderWithIngredients(accessToken);
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithAuthorization(orderToCreate, accessToken);

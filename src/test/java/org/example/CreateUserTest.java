@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.example.domain.AuthorizationResponse;
@@ -24,7 +25,9 @@ public class CreateUserTest extends BaseUserTest {
     public void setUp() {
         init();
     }
+
     @Test
+    @DisplayName("Create user")
     public void createUser() {
         User userToCreate = userSteps.generateRandomUser();
         createdUsers.add(userToCreate);
@@ -44,6 +47,7 @@ public class CreateUserTest extends BaseUserTest {
     }
 
     @Test
+    @DisplayName("Create duplicated user")
     public void createDuplicatedUser() {
         User userToCreate = userSteps.generateRandomUser();
         createdUsers.add(userToCreate);

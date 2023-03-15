@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
@@ -60,6 +61,7 @@ public class CreateInvalidUserParameterizedTest extends BaseUserTest {
     }
 
     @Test
+    @DisplayName("Create user with invalid data")
     public void createNotFullDataUser() {
         ValidatableResponse response = userSteps.createUser(user);
         createdUsers.add(user);

@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
@@ -28,6 +29,7 @@ public class CreateOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Create order with authorization")
     public void createOrderWithAuthorization() {
         Order orderToCreate = orderSteps.generateRandomOrderWithIngredients(accessToken);
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithAuthorization(orderToCreate, accessToken);
@@ -42,6 +44,7 @@ public class CreateOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Create order without authorization")
     public void createOrderWithoutAuthorization() {
         Order orderToCreate = orderSteps.generateRandomOrderWithIngredients(accessToken);
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithoutAuthorization(orderToCreate);
@@ -55,6 +58,7 @@ public class CreateOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Create order with ingredients")
     public void createOrderWithIngredients() {
         Order orderToCreate = orderSteps.generateRandomOrderWithIngredients(accessToken);
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithAuthorization(orderToCreate, accessToken);
@@ -66,6 +70,7 @@ public class CreateOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Create order without ingredients")
     public void createOrderWithoutIngredients() {
         Order orderToCreate = orderSteps.generateRandomOrderWithoutIngredients();
         ValidatableResponse createOrderResponse = orderSteps.createOrderWithAuthorization(orderToCreate, accessToken);
@@ -79,6 +84,7 @@ public class CreateOrderTest extends BaseOrderTest {
     }
 
     @Test
+    @DisplayName("Create order with invalid ingredients")
     public void createOrderWithInvalidIngredients() {
         Order orderToCreate = orderSteps.generateRandomOrderWithoutIngredients();
         orderToCreate.setIngredients(

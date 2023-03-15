@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.example.domain.AuthorizationResponse;
@@ -26,6 +27,7 @@ public class LoginUserTest extends BaseUserTest {
     }
 
     @Test
+    @DisplayName("Login user with valid credentials")
     public void successfulLoginUser() {
         User userToCreate = userSteps.generateRandomUser();
         createdUsers.add(userToCreate);
@@ -52,6 +54,7 @@ public class LoginUserTest extends BaseUserTest {
     }
 
     @Test
+    @DisplayName("Login user with invalid credentials")
     public void failLoginInvalidCredentialsUser() {
         User userToCreate = userSteps.generateRandomUser();
         createdUsers.add(userToCreate);
