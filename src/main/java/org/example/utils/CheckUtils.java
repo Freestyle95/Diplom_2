@@ -47,5 +47,4 @@ public class CheckUtils {
                 actual > lowerLimit
         );
     }
-
 }

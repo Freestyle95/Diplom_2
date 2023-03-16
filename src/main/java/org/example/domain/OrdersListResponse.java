@@ -9,10 +9,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class OrdersListResponse extends BaseResponse {
-
     private List<Order> orders;
     private int total;
     private int totalToday;
-
-
 }

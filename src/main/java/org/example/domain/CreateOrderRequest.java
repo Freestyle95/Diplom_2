@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 @Builder
 public class CreateOrderRequest {
-    List<String> ingredients;
+    private List<String> ingredients;
 }

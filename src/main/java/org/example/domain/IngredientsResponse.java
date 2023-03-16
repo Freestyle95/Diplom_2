@@ -9,5 +9,5 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class IngredientsResponse extends BaseResponse {
-    List<Ingredient> data;
+    private List<Ingredient> data;
 }
