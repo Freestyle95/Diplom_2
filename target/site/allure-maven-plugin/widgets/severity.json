@@ -1,0 +1,201 @@
+[ {
+  "uid" : "25289473bbcdf620",
+  "name" : "Update user with authorization",
+  "time" : {
+    "start" : 1678924837985,
+    "stop" : 1678924842464,
+    "duration" : 4479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec61575952bffdba",
+  "name" : "Update user without authorization",
+  "time" : {
+    "start" : 1678924828787,
+    "stop" : 1678924831192,
+    "duration" : 2405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dda6a4eac9b98924",
+  "name" : "Create order with invalid ingredients",
+  "time" : {
+    "start" : 1678924794022,
+    "stop" : 1678924796663,
+    "duration" : 2641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d93d031b9d4bd5",
+  "name" : "Create order with authorization",
+  "time" : {
+    "start" : 1678924804857,
+    "stop" : 1678924807965,
+    "duration" : 3108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48efe4feec74dce9",
+  "name" : "Create user with invalid data",
+  "time" : {
+    "start" : 1678924787179,
+    "stop" : 1678924792223,
+    "duration" : 5044
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4133004753760218",
+  "name" : "Create order with ingredients",
+  "time" : {
+    "start" : 1678924799468,
+    "stop" : 1678924802512,
+    "duration" : 3044
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45538d7cf60f8538",
+  "name" : "Create order without ingredients",
+  "time" : {
+    "start" : 1678924802518,
+    "stop" : 1678924804850,
+    "duration" : 2332
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f77a70e5ccd9e4d",
+  "name" : "Login user with invalid credentials",
+  "time" : {
+    "start" : 1678924821220,
+    "stop" : 1678924822081,
+    "duration" : 861
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55c1ee7e0bdcfbde",
+  "name" : "Update user without authorization",
+  "time" : {
+    "start" : 1678924835508,
+    "stop" : 1678924837982,
+    "duration" : 2474
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e96d67f12f90fbb3",
+  "name" : "Create user",
+  "time" : {
+    "start" : 1678924809799,
+    "stop" : 1678924811244,
+    "duration" : 1445
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5f8d827aa13559d",
+  "name" : "Update user without authorization",
+  "time" : {
+    "start" : 1678924822086,
+    "stop" : 1678924824463,
+    "duration" : 2377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3d228fdb9863c75",
+  "name" : "Get order with authorization",
+  "time" : {
+    "start" : 1678924811247,
+    "stop" : 1678924815686,
+    "duration" : 4439
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2e626114bfbaee9",
+  "name" : "Create user with invalid data",
+  "time" : {
+    "start" : 1678924793177,
+    "stop" : 1678924793995,
+    "duration" : 818
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c37f2a158b03535c",
+  "name" : "Get order without authorization",
+  "time" : {
+    "start" : 1678924815689,
+    "stop" : 1678924819234,
+    "duration" : 3545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7bd25c535bdb1172",
+  "name" : "Update user with authorization",
+  "time" : {
+    "start" : 1678924831195,
+    "stop" : 1678924835505,
+    "duration" : 4310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0f8b61bb4537a45",
+  "name" : "Login user with valid credentials",
+  "time" : {
+    "start" : 1678924819237,
+    "stop" : 1678924821218,
+    "duration" : 1981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f913f76457a0f64d",
+  "name" : "Create order without authorization",
+  "time" : {
+    "start" : 1678924796665,
+    "stop" : 1678924799466,
+    "duration" : 2801
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc11145c854c4c8d",
+  "name" : "Create user with invalid data",
+  "time" : {
+    "start" : 1678924792318,
+    "stop" : 1678924793172,
+    "duration" : 854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f46d5729457202de",
+  "name" : "Update user with authorization",
+  "time" : {
+    "start" : 1678924824467,
+    "stop" : 1678924828781,
+    "duration" : 4314
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9e6e4900d58e98b",
+  "name" : "Create duplicated user",
+  "time" : {
+    "start" : 1678924807971,
+    "stop" : 1678924809795,
+    "duration" : 1824
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
